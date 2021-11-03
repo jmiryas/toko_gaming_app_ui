@@ -8,11 +8,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: CustomScrollView(
         slivers: [
-          CustomHeaderWidget(),
-          CustomSearchWidget(),
+          CustomHeaderWidget(
+            leftWidget: IconButton(
+                onPressed: () {}, icon: const Icon(Icons.more_horiz)),
+            rightWidget: const CircleAvatar(
+              backgroundImage: AssetImage("images/profile.png"),
+            ),
+          ),
+          // CustomSearchWidget(),
         ],
       ),
     );

@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomHeaderWidget extends StatelessWidget {
-  const CustomHeaderWidget({Key? key}) : super(key: key);
+  final Widget leftWidget;
+  final Widget rightWidget;
+
+  const CustomHeaderWidget(
+      {Key? key, required this.leftWidget, required this.rightWidget})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +17,7 @@ class CustomHeaderWidget extends StatelessWidget {
         margin: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 20.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
-            const CircleAvatar(
-              backgroundImage: AssetImage("images/profile.png"),
-            )
-          ],
+          children: [leftWidget, rightWidget],
         ),
       ),
     );
