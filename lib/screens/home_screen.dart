@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/custom_header_widget.dart';
 import '../widgets/custom_search_widget.dart';
+import '../widgets/product_category_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,7 +19,8 @@ class HomeScreen extends StatelessWidget {
               backgroundImage: AssetImage("images/profile.png"),
             ),
           ),
-          // CustomSearchWidget(),
+          const CustomSearchWidget(),
+          const ProductCategoryWidget()
         ],
       ),
     );
