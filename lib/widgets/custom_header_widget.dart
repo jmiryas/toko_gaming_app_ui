@@ -14,7 +14,7 @@ class CustomHeaderWidget extends StatelessWidget {
       child: Container(
         height: 35.0,
         // color: Colors.amber,
-        margin: const EdgeInsets.fromLTRB(20.0, 30.0, 20.0, 20.0),
+        margin: const EdgeInsets.fromLTRB(20.0, 50.0, 20.0, 20.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [leftWidget, rightWidget],

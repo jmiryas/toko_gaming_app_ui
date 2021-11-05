@@ -18,7 +18,7 @@ class _ProductCategoryWidgetState extends State<ProductCategoryWidget> {
       child: Container(
         height: 60.0,
         // color: Colors.amber,
-        margin: const EdgeInsets.symmetric(horizontal: 20.0),
+        margin: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/product_list_widget.dart';
 import '../widgets/custom_header_widget.dart';
 import '../widgets/custom_search_widget.dart';
 import '../widgets/product_category_widget.dart';
@@ -20,7 +21,8 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const CustomSearchWidget(),
-          const ProductCategoryWidget()
+          const ProductCategoryWidget(),
+          const ProductListWidget()
         ],
       ),
     );
